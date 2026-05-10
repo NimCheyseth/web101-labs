@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Bio Page</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Website</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="bio.html">Home</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+
+            <img 
+                src="./Kitty (1).jpg" 
+                alt="Photo of Nim Cheyseth" 
+                width="250"
+            >
+
+            <p>
+                Hello! My name is <strong>Nim Cheyseth</strong>. 
+                I am learning ITE at RUPP.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Figma</li>
+                <li>AI</li>
+                <li>MySQL</li>
+                <li>Java</li>
+            </ul>
+        </section>
+
+        <!-- Links Section -->
+        <section>
+            <h2>My Links</h2>
+
+            <ul>
+                <li>
+                    <a href="https://github.com/" target="_blank">
+                        GitHub
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://facebook.com/" target="_blank">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/NimCheyseth/web101-labs" target="_blank">
+                        My project
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Schedule Section -->
+        <section>
+            <h2>Schedule</h2>
+
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            DSA II - Lecture (2h)<br>
+                            Dr. Chhoeum Vantha<br><br>
+
+                            DSA II - Lab (2h)<br>
+                            Dr. Chhoeum Vantha
+                        </td>
+
+                        <td>
+                            APL I - Lecture (2h)<br>
+                            Mrs. Kuon Satika<br><br>
+
+                            APL I - Lab (2h)<br>
+                            Mrs. Kuon Satika
+                        </td>
+
+                        <td>
+                            English (online)<br>
+                            Kem Ratana<br><br>
+
+                            DB I - Lecture (1h)<br>
+                            Mr. Toem Theara
+                        </td>
+
+                        <td>
+                            PP (2h)<br>
+                            Mr. Chhim Bunchhun<br><br>
+
+                            PP (2h)<br>
+                            Mr. Ouk Keovichear<br><br>
+
+                            OOAD (3h)<br>
+                            Mr. Hun Sovannsoreya
+                        </td>
+
+                        <td>
+                            DC II - Lecture (3h)<br>
+                            Mr. Ses Ded<br><br>
+
+                            DB I - Lecture (2h)<br>
+                            Mr. Toem Theara
+                        </td>
+
+                        <td>
+                            WCT I - Lecture (2h)<br>
+                            Mr. Sao Kimsong<br><br>
+
+                            WCT I - Lab (2h)<br>
+                            Mr. Sao Kimsong
+                        </td>
+
+                        <td>No class</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <!-- Name -->
+                <div>
+                    <label for="name">Full Name:</label><br>
+
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name"
+                        required
+                        minlength="3"
+                    >
+                </div>
+
+                <br>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email:</label><br>
+
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <!-- Phone -->
+                <div>
+                    <label for="phone">Phone Number:</label><br>
+
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone"
+                        pattern="[0-9]{8,12}"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <!-- Topic -->
+                <div>
+                    <label for="topic">Topic:</label><br>
+
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Select Topic --</option>
+                        <option value="study">Study</option>
+                        <option value="project">Project</option>
+                        <option value="job">Job</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- Message -->
+                <div>
+                    <label for="message">Message:</label><br>
+
+                    <textarea 
+                        id="message" 
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        required
+                        minlength="10"
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Nim Cheyseth</p>
+    </footer>
+
+</body>
+</html>
