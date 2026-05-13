@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Skincare Genz</h1>
+        <nav>
+            <a href="./Home.html"><b>Home</b></a>
+            <a href="./ProductList.html"><b>ProductList</b></a>
+            <a href="./AboutUs.html"><b>AboutUs</b></a>
+            <a href="./ContactUs.html"><b>ContactUs</b></a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h1>Get In Touch</h1>
+            <!-- Contact Form -->
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <!-- Name -->
+                <div>
+                    <label for="name">Full Name:</label><br>
+
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name"
+                        required
+                        minlength="3"
+                    >
+                </div>
+
+                <br>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email:</label><br>
+
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <!-- Phone -->
+                <div>
+                    <label for="phone">Phone Number:</label><br>
+
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone"
+                        pattern="[0-9]{8,12}"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <!-- Topic -->
+                <div>
+                    <label for="Age">Age:</label><br>
+
+                    <select id="Age" name="Age" required>
+                        <option value="">-- Select Age --</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- Message -->
+                <div>
+                    <label for="message">Message:</label><br>
+
+                    <textarea 
+                        id="message" 
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        required
+                        minlength="10"
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
